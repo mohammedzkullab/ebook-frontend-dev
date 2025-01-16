@@ -5,7 +5,7 @@ import {Auth} from "./stores/Auth";
 axios.defaults.baseURL = process.env.backend_url;
 axios.defaults.withCredentials = true;
 axios.defaults.headers = {
-    'Content-Type': 'application/x-www-form-urlencoded',
+    'Content-Type': 'application/json',
     Accept: 'application/json',
     "Access-Control-Allow-Origin": "*",
 
