@@ -3,10 +3,12 @@ import router from "./router/index";
 import {Auth} from "./stores/Auth";
 
 axios.defaults.baseURL = process.env.backend_url;
-axios.defaults.withCredentials = true
+axios.defaults.withCredentials = false;
 axios.defaults.headers = {
-    'Content-Type': 'application/json',
+    'Content-Type': 'application/x-www-form-urlencoded',
     Accept: 'application/json',
+    "Access-Control-Allow-Origin": "*",
+
 }
 
 axios.interceptors.response.use(
